@@ -1,0 +1,817 @@
+// Futura PT Heavy
+
+// font-family: futura-pt, sans-serif;
+
+// font-weight: 700;
+
+// font-style: normal;
+
+
+// Futura PT Book
+
+// font-family: futura-pt, sans-serif;
+
+// font-weight: 400;
+
+// font-style: normal;
+
+
+// Futura PT Bold
+
+// font-family: futura-pt-bold, sans-serif;
+
+// font-weight: 700;
+
+// font-style: normal;
+
+
+// font-family: monotype-modern-display, sans-serif;
+
+// font-weight: 400;
+
+// font-style: normal;
+
+//------------------- GENERAL CSS -------------------
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    color: #253551;
+}
+
+a {
+    text-decoration: none;
+    color: #253551;
+}
+
+.general-btn {
+    background-color: #253551;
+    -moz-border-radius: 300px;
+    -webkit-border-radius: 300px;
+    border-radius: 300px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: poppins,sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: .02em;
+    padding: 1.2em 2.004em;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+//------------------- NAV -------------------
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 5vw;
+
+    .brand-logo {
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0em;
+        text-transform: none;
+        line-height: 1.4em;
+        font-size: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-left: 1.5vw;
+
+            a {
+                font-family: poppins,sans-serif;
+                font-weight: 200;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                line-height: 1.8em;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+//------------------- HEADER -------------------
+.container {
+    padding: 0 5vw;
+    padding-top: 3.6vmax;
+    padding-bottom: 3.6vmax;
+
+    .header-container{
+        width: 50%;
+
+        .sub-head {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.3663999999999998;
+            margin-bottom: 2rem;
+        }
+
+        .header {
+            font-weight: 500;
+            font-size: 4rem;
+            line-height: 1.232;
+            margin-bottom: 2rem;
+            letter-spacing: 0em;
+            text-transform: none;
+        }
+    }
+}
+
+//------------------- SECTIONS ELEMENTS -------------------
+.section-container {
+    padding-top: 6.6vmax;
+    padding-bottom: 6.6vmax;
+
+    &:nth-child(2n+1) {
+
+        .section-elements {
+            flex-direction: row-reverse;
+
+            .text-element {
+                margin-right: 0;
+                margin-left: 5%;
+            }
+        }
+    }
+
+    .section-elements {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .text-element {
+            width: 600px;
+            margin-right: 5%;
+
+            .sub-head-element {
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 1.3663999999999998;
+                margin-bottom: 2rem;
+            }
+
+            .header-element {
+                font-weight: 500;
+                font-size: 2.8rem;
+                line-height: 1.232;
+                margin-bottom: 2rem;
+                letter-spacing: 0em;
+                text-transform: none;
+            }
+
+            .general-btn {
+                font-size: 1rem;
+            }
+        }
+
+        .img-element-code {
+            max-width: 600px;
+            width: 100%;
+            height: 0;
+            padding-bottom: 45%;
+            background-image: url("images/computer-with-code.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img-element-design {
+            max-width: 600px;
+            width: 100%;
+            height: 0;
+            padding-bottom: 45%;
+            background-image: url("images/design-books.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img-element-film {
+            max-width: 600px;
+            width: 100%;
+            height: 0;
+            padding-bottom: 45%;
+            background-image: url("images/film-editing.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img-element-photo {
+            max-width: 600px;
+            width: 100%;
+            height: 0;
+            padding-bottom: 45%;
+            background-image: url("images/camera.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+//------------------- WEB DEV -------------------
+
+.container-dev {
+    padding: 0 5vw;
+    padding-top: 3.6vmax;
+    padding-bottom: 3.6vmax;
+
+    .header-container {
+        text-align: center;
+        padding-top: 3.6vmax;
+        padding-bottom: 3.6vmax;
+
+        .header {
+            font-size: 2.8rem;
+            font-family: futura-pt;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+        }
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 3.6vmax;
+
+        .tech-col {
+            text-align: center;
+            margin: 18px;
+
+            h3 {
+                font-size: 2.2rem;
+                line-height: 1.3327999999999998;
+                font-family: futura-pt;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+            }
+
+            p {
+                font-family: Poppins;
+                font-weight: 200;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    .section-btn {
+        text-align: center;
+    }
+
+    .overlap-container {
+
+        .overlap {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .img-card {
+                z-index: 1;
+                background-image: url('images/design-books.jpg');
+                max-width: 600px;
+                width: 100%;
+                height: 0;
+                padding-bottom: 45%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .info-card {
+                width: 50%;
+                background-color: #e0e0db;
+                z-index: 2;
+                padding: 5%;
+                margin-left: -100px;
+
+                h3 {
+                    font-size: 2.2rem;
+                    line-height: 1.3327999999999998;
+                    font-family: futura-pt;
+                    font-weight: 500;
+                    font-style: normal;
+                    letter-spacing: 0em;
+                    text-transform: none;
+                    margin: 0;
+                }
+
+                p {
+                    font-family: Poppins;
+                    font-weight: 200;
+                    font-style: normal;
+                    letter-spacing: 0em;
+                    text-transform: none;
+                    font-size: 1rem;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+
+}
+
+//------------------- DESIGN -------------------
+.container-design {
+    padding: 0 5vw;
+    padding-top: 3.6vmax;
+    padding-bottom: 3.6vmax;
+
+    .header-container {
+        padding-top: 3.6vmax;
+        padding-bottom: 3.6vmax;
+
+        &:nth-child(5) {
+            width: 50%;
+            padding-top: 18vmax;
+            padding-bottom: 18vmax;
+        }
+
+        .header {
+            font-size: 2.8rem;
+            font-family: futura-pt;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+        }
+
+        p {
+            font-family: Poppins;
+            font-weight: 200;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 3.6vmax;
+        padding-bottom: 0;
+
+        &:nth-child(3) {
+            padding-top: 0;
+            padding-bottom: 3.6vmax;
+        }
+
+        .design-col {
+            margin: 18px;
+
+            h4 {
+                font-size: 1.6rem;
+                line-height: 1.3663999999999998;
+                font-family: futura-pt;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+            }
+
+            p {
+                font-family: Poppins;
+                font-weight: 200;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    .design-grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 3rem;
+        grid-row-gap: 2rem;
+        justify-content: space-between;
+
+        .grid-item {
+            align-items: center;
+            justify-self: center;
+            cursor: pointer;
+
+            .item-img {
+                width: 100%;
+
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+
+    }
+}
+//------------------- DESIGN PROJECTS TEMPLATE -------------------
+.container-design-template {
+    padding: 0 5vw;
+    padding-top: 3.6vmax;
+    padding-bottom: 3.6vmax;
+
+    .header-container {
+        text-align: center;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 18vmax;
+
+        .header-title {
+            font-size: 1.6rem;
+            line-height: 1.3663999999999998;
+            font-family: futura-pt;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+        }
+
+        .header {
+            font-size: 2.8rem;
+            font-family: futura-pt;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+        }
+    }
+
+    .gallery-container {
+        margin-top: 3.6vmax;
+        margin-bottom: 3.6vmax;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .section-btn {
+        text-align: center;
+    }
+
+    .project-arrows {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .previous-project {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            i {
+                font-size: 3rem;
+                margin-right: 1rem;
+            }
+
+        }
+
+        .next-project {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            i {
+                font-size: 3rem;
+                margin-left: 1rem;
+            }
+        }
+
+        h2 {
+            font-family: futura-pt;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+            line-height: 1.4em;
+            font-size: 2.2rem;
+        }
+    }
+
+
+}
+
+//------------------- FILM -------------------
+.container-film {
+    padding: 0 5vw;
+    padding-top: 3.6vmax;
+    padding-bottom: 3.6vmax;
+
+    .header-container {
+        text-align: center;
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 3.6vmax;
+        padding-bottom: 13vmax;
+
+        .header {
+            font-size: 2.8rem;
+            font-family: futura-pt;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+        }
+
+        p {
+            font-family: Poppins;
+            font-weight: 200;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+    }
+
+    .video-gallery-container {
+        margin-top: 3.6vmax;
+        margin-bottom: 3.6vmax;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .section-btn {
+        text-align: center;
+    }
+}
+
+//------------------- PHOTO -------------------
+.container-photo {
+    padding: 0 5vw;
+    padding-top: 3.6vmax;
+    padding-bottom: 3.6vmax;
+
+    .header-container {
+        width: 75%;
+        padding-top: 3.6vmax;
+        padding-bottom: 10vmax;
+
+        .header {
+            font-size: 2.8rem;
+            font-family: futura-pt;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+        }
+
+        p {
+            font-family: Poppins;
+            font-weight: 200;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+    }
+
+    .section-btn {
+        padding-bottom: 10vmax;
+    }
+
+    .photo-grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        justify-content: space-between;
+
+        .grid-item {
+            align-items: center;
+            justify-self: center;
+            cursor: pointer;
+
+            .item-img {
+                width: 100%;
+
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+
+//------------------- ABOUT -------------------
+.container-about {
+    padding: 0 5vw;
+    padding-top: 10.4vmax;
+    padding-bottom: 3.6vmax;
+
+    .about-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 10vmax;
+
+        .header-container {
+            width: calc(50% - 5%);
+            margin-right: 10%;
+
+            .header {
+                font-size: 2.2rem;
+                line-height: 1.3327999999999998;
+                font-family: futura-pt;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                margin-top: 0;
+            }
+
+            .sub-head {
+                font-family: Poppins;
+                font-weight: 300;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                line-height: 1.8em;
+                font-size: 1.5rem;
+                line-height: 1.8;
+            }
+
+            .sub-head-sm {
+                font-family: Poppins;
+                font-weight: 200;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+        }
+
+        .about-img{
+            width: calc(50% - 5%);
+            padding-bottom: 45%;
+            background-image: url("images/design-books.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .bottom-header-container {
+        padding-top: 10.4vmax;
+
+        .header-bottom {
+            font-size: 2.8rem;
+            font-family: futura-pt;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+        }
+    }
+}
+
+//------------------- CONTACT -------------------
+.container-contact{
+    padding: 0 5vw;
+    padding-top: 10.4vmax;
+    padding-bottom: 3.6vmax;
+
+    .contact-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .contact-img {
+            width: calc(50% - 5%);
+            padding-bottom: 45%;
+            background-image: url("images/design-books.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .header-container {
+            width: calc(50% - 5%);
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+
+            .header {
+                font-size: 2.8rem;
+                font-family: futura-pt;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .mail {
+                font-family: Poppins;
+                font-weight: 200;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                font-size: 1.2rem;
+                line-height: 1.8;
+            }
+
+            a {
+                width: fit-content;
+                text-decoration: underline;
+                font-family: poppins,sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                line-height: 1.8em;
+                font-size: 1rem;
+            }
+
+
+        }
+    }
+
+
+}
+
+
+//------------------- FOOTER -------------------
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #253551;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .footer-links {
+
+        a {
+            text-decoration: underline;
+            color: white;
+            font-family: poppins,sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 0em;
+            text-transform: none;
+            line-height: 1.8em;
+            font-size: 1rem;
+            margin: 1vw;
+        }
+    }
+
+    .social-icons {
+        width: fit-content;
+
+        i {
+            padding: 1.5vw 1vw;
+        }
+
+        .fa-instagram {
+            color: white;
+        }
+
+        .fa-twitter {
+            color: white;
+        }
+
+        .fa-youtube {
+            color: white;
+        }
+    }
+}

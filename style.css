@@ -1,0 +1,665 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  color: #253551;
+}
+
+a {
+  text-decoration: none;
+  color: #253551;
+}
+
+.general-btn {
+  background-color: #253551;
+  -moz-border-radius: 300px;
+  -webkit-border-radius: 300px;
+  border-radius: 300px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  padding: 1.2em 2.004em;
+}
+.general-btn:hover {
+  opacity: 0.8;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 5vw;
+}
+nav .brand-logo {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.4em;
+  font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin-left: 1.5vw;
+}
+nav ul li a {
+  font-family: poppins, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.8em;
+  font-size: 1rem;
+}
+
+.container {
+  padding: 0 5vw;
+  padding-top: 3.6vmax;
+  padding-bottom: 3.6vmax;
+}
+.container .header-container {
+  width: 50%;
+}
+.container .header-container .sub-head {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3664;
+  margin-bottom: 2rem;
+}
+.container .header-container .header {
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 1.232;
+  margin-bottom: 2rem;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+
+.section-container {
+  padding-top: 6.6vmax;
+  padding-bottom: 6.6vmax;
+}
+.section-container:nth-child(2n+1) .section-elements {
+  flex-direction: row-reverse;
+}
+.section-container:nth-child(2n+1) .section-elements .text-element {
+  margin-right: 0;
+  margin-left: 5%;
+}
+.section-container .section-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-container .section-elements .text-element {
+  width: 600px;
+  margin-right: 5%;
+}
+.section-container .section-elements .text-element .sub-head-element {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3664;
+  margin-bottom: 2rem;
+}
+.section-container .section-elements .text-element .header-element {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 1.232;
+  margin-bottom: 2rem;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.section-container .section-elements .text-element .general-btn {
+  font-size: 1rem;
+}
+.section-container .section-elements .img-element-code {
+  max-width: 600px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  background-image: url("images/computer-with-code.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-container .section-elements .img-element-design {
+  max-width: 600px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  background-image: url("images/design-books.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-container .section-elements .img-element-film {
+  max-width: 600px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  background-image: url("images/film-editing.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-container .section-elements .img-element-photo {
+  max-width: 600px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  background-image: url("images/camera.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-dev {
+  padding: 0 5vw;
+  padding-top: 3.6vmax;
+  padding-bottom: 3.6vmax;
+}
+.container-dev .header-container {
+  text-align: center;
+  padding-top: 3.6vmax;
+  padding-bottom: 3.6vmax;
+}
+.container-dev .header-container .header {
+  font-size: 2.8rem;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.container-dev .section-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3.6vmax;
+}
+.container-dev .section-container .tech-col {
+  text-align: center;
+  margin: 18px;
+}
+.container-dev .section-container .tech-col h3 {
+  font-size: 2.2rem;
+  line-height: 1.3328;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.container-dev .section-container .tech-col p {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.container-dev .section-btn {
+  text-align: center;
+}
+.container-dev .overlap-container .overlap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container-dev .overlap-container .overlap .img-card {
+  z-index: 1;
+  background-image: url("images/design-books.jpg");
+  max-width: 600px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-dev .overlap-container .overlap .info-card {
+  width: 50%;
+  background-color: #e0e0db;
+  z-index: 2;
+  padding: 5%;
+  margin-left: -100px;
+}
+.container-dev .overlap-container .overlap .info-card h3 {
+  font-size: 2.2rem;
+  line-height: 1.3328;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  margin: 0;
+}
+.container-dev .overlap-container .overlap .info-card p {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.container-design {
+  padding: 0 5vw;
+  padding-top: 3.6vmax;
+  padding-bottom: 3.6vmax;
+}
+.container-design .header-container {
+  padding-top: 3.6vmax;
+  padding-bottom: 3.6vmax;
+}
+.container-design .header-container:nth-child(5) {
+  width: 50%;
+  padding-top: 18vmax;
+  padding-bottom: 18vmax;
+}
+.container-design .header-container .header {
+  font-size: 2.8rem;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.container-design .header-container p {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.container-design .section-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3.6vmax;
+  padding-bottom: 0;
+}
+.container-design .section-container:nth-child(3) {
+  padding-top: 0;
+  padding-bottom: 3.6vmax;
+}
+.container-design .section-container .design-col {
+  margin: 18px;
+}
+.container-design .section-container .design-col h4 {
+  font-size: 1.6rem;
+  line-height: 1.3664;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.container-design .section-container .design-col p {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.container-design .design-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+  justify-content: space-between;
+}
+.container-design .design-grid-container .grid-item {
+  align-items: center;
+  justify-self: center;
+  cursor: pointer;
+}
+.container-design .design-grid-container .grid-item .item-img {
+  width: 100%;
+}
+.container-design .design-grid-container .grid-item .item-img:hover {
+  opacity: 0.8;
+}
+
+.container-design-template {
+  padding: 0 5vw;
+  padding-top: 3.6vmax;
+  padding-bottom: 3.6vmax;
+}
+.container-design-template .header-container {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 18vmax;
+}
+.container-design-template .header-container .header-title {
+  font-size: 1.6rem;
+  line-height: 1.3664;
+  font-family: futura-pt;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.container-design-template .header-container .header {
+  font-size: 2.8rem;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.container-design-template .gallery-container {
+  margin-top: 3.6vmax;
+  margin-bottom: 3.6vmax;
+}
+.container-design-template .gallery-container img {
+  width: 100%;
+}
+.container-design-template .section-btn {
+  text-align: center;
+}
+.container-design-template .project-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-design-template .project-arrows .previous-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container-design-template .project-arrows .previous-project i {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.container-design-template .project-arrows .next-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container-design-template .project-arrows .next-project i {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+.container-design-template .project-arrows h2 {
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.4em;
+  font-size: 2.2rem;
+}
+
+.container-film {
+  padding: 0 5vw;
+  padding-top: 3.6vmax;
+  padding-bottom: 3.6vmax;
+}
+.container-film .header-container {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 3.6vmax;
+  padding-bottom: 13vmax;
+}
+.container-film .header-container .header {
+  font-size: 2.8rem;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.container-film .header-container p {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.container-film .video-gallery-container {
+  margin-top: 3.6vmax;
+  margin-bottom: 3.6vmax;
+}
+.container-film .video-gallery-container img {
+  width: 100%;
+}
+.container-film .section-btn {
+  text-align: center;
+}
+
+.container-photo {
+  padding: 0 5vw;
+  padding-top: 3.6vmax;
+  padding-bottom: 3.6vmax;
+}
+.container-photo .header-container {
+  width: 75%;
+  padding-top: 3.6vmax;
+  padding-bottom: 10vmax;
+}
+.container-photo .header-container .header {
+  font-size: 2.8rem;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+.container-photo .header-container p {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.container-photo .section-btn {
+  padding-bottom: 10vmax;
+}
+.container-photo .photo-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  justify-content: space-between;
+}
+.container-photo .photo-grid-container .grid-item {
+  align-items: center;
+  justify-self: center;
+  cursor: pointer;
+}
+.container-photo .photo-grid-container .grid-item .item-img {
+  width: 100%;
+}
+.container-photo .photo-grid-container .grid-item .item-img:hover {
+  opacity: 0.8;
+}
+
+.container-about {
+  padding: 0 5vw;
+  padding-top: 10.4vmax;
+  padding-bottom: 3.6vmax;
+}
+.container-about .about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 10vmax;
+}
+.container-about .about-section .header-container {
+  width: calc(50% - 5%);
+  margin-right: 10%;
+}
+.container-about .about-section .header-container .header {
+  font-size: 2.2rem;
+  line-height: 1.3328;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  margin-top: 0;
+}
+.container-about .about-section .header-container .sub-head {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.8em;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+.container-about .about-section .header-container .sub-head-sm {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.container-about .about-section .about-img {
+  width: calc(50% - 5%);
+  padding-bottom: 45%;
+  background-image: url("images/design-books.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-about .bottom-header-container {
+  padding-top: 10.4vmax;
+}
+.container-about .bottom-header-container .header-bottom {
+  font-size: 2.8rem;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+
+.container-contact {
+  padding: 0 5vw;
+  padding-top: 10.4vmax;
+  padding-bottom: 3.6vmax;
+}
+.container-contact .contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container-contact .contact-section .contact-img {
+  width: calc(50% - 5%);
+  padding-bottom: 45%;
+  background-image: url("images/design-books.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-contact .contact-section .header-container {
+  width: calc(50% - 5%);
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.container-contact .contact-section .header-container .header {
+  font-size: 2.8rem;
+  font-family: futura-pt;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container-contact .contact-section .header-container .mail {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.container-contact .contact-section .header-container a {
+  width: fit-content;
+  text-decoration: underline;
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.8em;
+  font-size: 1rem;
+}
+
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #253551;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-links a {
+  text-decoration: underline;
+  color: white;
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.8em;
+  font-size: 1rem;
+  margin: 1vw;
+}
+footer .social-icons {
+  width: fit-content;
+}
+footer .social-icons i {
+  padding: 1.5vw 1vw;
+}
+footer .social-icons .fa-instagram {
+  color: white;
+}
+footer .social-icons .fa-twitter {
+  color: white;
+}
+footer .social-icons .fa-youtube {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
