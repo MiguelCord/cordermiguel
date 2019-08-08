@@ -696,7 +696,7 @@ nav ul li a {
 .container-about .about-section .about-img {
   width: calc(50% - 5%);
   padding-bottom: 45%;
-  background-image: url("images/design-books.jpg");
+  background-image: url("images/about.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -705,6 +705,8 @@ nav ul li a {
   .container-about .about-section .about-img {
     width: 100%;
     margin-bottom: 6.6vmax;
+    padding-bottom: 55%;
+    background-position: bottom;
   }
 }
 
@@ -727,15 +729,16 @@ nav ul li a {
 }
 .container-contact .contact-section .contact-img {
   width: calc(50% - 5%);
-  padding-bottom: 45%;
-  background-image: url("images/design-books.jpg");
-  background-position: center;
+  padding-bottom: 50%;
+  background-image: url("images/contact.jpg");
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (max-width: 770px) {
   .container-contact .contact-section .contact-img {
-    width: 100%;
+    width: 60%;
+    padding-bottom: 65%;
     margin-top: 6.6vmax;
   }
 }
