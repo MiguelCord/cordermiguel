@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -75,6 +77,11 @@ nav ul li a {
 .container .header-container {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .container .header-container {
+    width: 100%;
+  }
+}
 .container .header-container .sub-head {
   font-weight: 400;
   font-size: 1.6rem;
@@ -89,10 +96,20 @@ nav ul li a {
   letter-spacing: 0em;
   text-transform: none;
 }
+@media (max-width: 500px) {
+  .container .header-container .header {
+    font-size: 3rem;
+  }
+}
 
 .section-container {
   padding-top: 6.6vmax;
   padding-bottom: 6.6vmax;
+}
+@media (max-width: 770px) {
+  .section-container {
+    padding-top: 12.6vmax;
+  }
 }
 .section-container:nth-child(2n+1) .section-elements {
   flex-direction: row-reverse;
@@ -107,9 +124,20 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 770px) {
+  .section-container .section-elements {
+    flex-direction: column-reverse;
+  }
+}
 .section-container .section-elements .text-element {
   width: 600px;
   margin-right: 5%;
+}
+@media (max-width: 770px) {
+  .section-container .section-elements .text-element {
+    width: 100%;
+    margin: auto;
+  }
 }
 .section-container .section-elements .text-element .sub-head-element {
   font-weight: 400;
@@ -137,6 +165,13 @@ nav ul li a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 0px;
+}
+@media (max-width: 770px) {
+  .section-container .section-elements .img-element-code {
+    max-width: 100%;
+    padding-bottom: 55%;
+  }
 }
 .section-container .section-elements .img-element-design {
   max-width: 600px;
@@ -191,10 +226,25 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   padding-top: 3.6vmax;
+  width: 100%;
+}
+@media (max-width: 615px) {
+  .container-dev .section-container {
+    flex-direction: column;
+    padding-top: 0;
+    align-items: center;
+  }
 }
 .container-dev .section-container .tech-col {
   text-align: center;
   margin: 18px;
+  width: 33%;
+}
+@media (max-width: 615px) {
+  .container-dev .section-container .tech-col {
+    width: 50%;
+    margin: 0;
+  }
 }
 .container-dev .section-container .tech-col h3 {
   font-size: 2.2rem;
@@ -204,6 +254,11 @@ nav ul li a {
   font-style: normal;
   letter-spacing: 0em;
   text-transform: none;
+}
+@media (max-width: 615px) {
+  .container-dev .section-container .tech-col h3 {
+    margin-top: 0;
+  }
 }
 .container-dev .section-container .tech-col p {
   font-family: Poppins;
@@ -217,28 +272,97 @@ nav ul li a {
 .container-dev .section-btn {
   text-align: center;
 }
+@media (max-width: 700px) {
+  .container-dev .overlap-container {
+    margin-bottom: 6.6vmax;
+  }
+}
+.container-dev .overlap-container:nth-of-type(2n) .overlap {
+  flex-direction: row-reverse;
+}
+@media (max-width: 700px) {
+  .container-dev .overlap-container:nth-of-type(2n) .overlap {
+    flex-direction: column-reverse;
+  }
+}
+.container-dev .overlap-container:nth-of-type(2n) .overlap .img-card {
+  background-image: url("images/dev/pokedex.png");
+}
+@media (max-width: 700px) {
+  .container-dev .overlap-container:nth-of-type(2n) .overlap .img-card {
+    padding-bottom: 64%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.container-dev .overlap-container:nth-of-type(2n) .overlap .info-card {
+  margin-left: 0;
+  margin-right: -100px;
+}
+@media (max-width: 700px) {
+  .container-dev .overlap-container:nth-of-type(2n) .overlap .info-card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.container-dev .overlap-container:nth-of-type(4n-1) .overlap .img-card {
+  background-image: url("images/dev/apurao.png");
+}
+.container-dev .overlap-container:nth-of-type(5n-2) .overlap .img-card {
+  background-image: url("images/dev/sdq.png");
+}
+.container-dev .overlap-container:nth-of-type(6n-3) .overlap .img-card {
+  background-image: url("images/dev/dat-cuny.png");
+}
+.container-dev .overlap-container:nth-of-type(7n-4) .overlap .img-card {
+  background-image: url("images/dev/game-one.png");
+}
+.container-dev .overlap-container:nth-of-type(8n-5) .overlap .img-card {
+  background-image: url("images/dev/game-two.png");
+}
+.container-dev .overlap-container:nth-of-type(9n-6) .overlap .img-card {
+  background-image: url("images/dev/invox.png");
+}
 .container-dev .overlap-container .overlap {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+@media (max-width: 700px) {
+  .container-dev .overlap-container .overlap {
+    flex-direction: column-reverse;
+  }
+}
 .container-dev .overlap-container .overlap .img-card {
   z-index: 1;
-  background-image: url("images/design-books.jpg");
-  max-width: 600px;
+  background-image: url("images/dev/job-market.png");
+  max-width: 800px;
   width: 100%;
   height: 0;
   padding-bottom: 45%;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+@media (max-width: 700px) {
+  .container-dev .overlap-container .overlap .img-card {
+    padding-bottom: 64%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
 }
 .container-dev .overlap-container .overlap .info-card {
   width: 50%;
-  background-color: #e0e0db;
+  background-color: #f3f3f1;
   z-index: 2;
-  padding: 5%;
+  padding: 6%;
   margin-left: -100px;
+}
+@media (max-width: 700px) {
+  .container-dev .overlap-container .overlap .info-card {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 .container-dev .overlap-container .overlap .info-card h3 {
   font-size: 2.2rem;
@@ -258,6 +382,13 @@ nav ul li a {
   text-transform: none;
   font-size: 1rem;
   line-height: 1.8;
+}
+.container-dev .overlap-container .overlap .info-card .general-btn {
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  padding: 1em 2em;
+  margin: 0.3em;
 }
 
 .container-design {
@@ -516,9 +647,19 @@ nav ul li a {
   align-items: flex-start;
   padding-bottom: 10vmax;
 }
+@media (max-width: 770px) {
+  .container-about .about-section {
+    flex-direction: column-reverse;
+  }
+}
 .container-about .about-section .header-container {
   width: calc(50% - 5%);
   margin-right: 10%;
+}
+@media (max-width: 770px) {
+  .container-about .about-section .header-container {
+    width: 100%;
+  }
 }
 .container-about .about-section .header-container .header {
   font-size: 2.2rem;
@@ -549,6 +690,9 @@ nav ul li a {
   font-size: 1rem;
   line-height: 1.8;
 }
+.container-about .about-section .header-container .general-btn {
+  margin-top: 6.6vmax;
+}
 .container-about .about-section .about-img {
   width: calc(50% - 5%);
   padding-bottom: 45%;
@@ -557,28 +701,29 @@ nav ul li a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.container-about .bottom-header-container {
-  padding-top: 10.4vmax;
-}
-.container-about .bottom-header-container .header-bottom {
-  font-size: 2.8rem;
-  font-family: futura-pt;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 0em;
-  text-transform: none;
+@media (max-width: 770px) {
+  .container-about .about-section .about-img {
+    width: 100%;
+    margin-bottom: 6.6vmax;
+  }
 }
 
 .container-contact {
   padding: 0 5vw;
   padding-top: 10.4vmax;
   padding-bottom: 3.6vmax;
+  flex: 1;
 }
 .container-contact .contact-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+@media (max-width: 770px) {
+  .container-contact .contact-section {
+    flex-direction: column-reverse;
+  }
 }
 .container-contact .contact-section .contact-img {
   width: calc(50% - 5%);
@@ -588,11 +733,23 @@ nav ul li a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 770px) {
+  .container-contact .contact-section .contact-img {
+    width: 100%;
+    margin-top: 6.6vmax;
+  }
+}
 .container-contact .contact-section .header-container {
   width: calc(50% - 5%);
   margin-left: 10%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 770px) {
+  .container-contact .contact-section .header-container {
+    width: 100%;
+    margin: auto;
+  }
 }
 .container-contact .contact-section .header-container .header {
   font-size: 2.8rem;
@@ -627,12 +784,13 @@ nav ul li a {
 
 footer {
   width: 100%;
-  height: 250px;
+  height: 200px;
   background-color: #253551;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 footer .footer-links a {
   text-decoration: underline;
